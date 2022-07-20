@@ -61,9 +61,9 @@ Hero Header
 			50deg,
 			rgba(36, 36, 62, 1),
 			rgba(48, 43, 99, 1),
-			rgba(15, 12, 41, 1),
-			rgba(48, 43, 99, 1),
-			rgb(96, 96, 253)
+			rgb(96, 96, 253),
+			rgba(15, 12, 41, 1)
+			
 		)
 		0 0 / 1000% no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 30px;
@@ -189,6 +189,7 @@ Hero Header
 	margin: 30px;
 	cursor: pointer;
 	border: solid 1px;
+	transition: all 1s ease;
 }
 .main-menu .active,
 .main-menu ul li:hover {
@@ -303,6 +304,38 @@ Hero Header
 	line-height: 30px;
 	text-align: center;
 	color: #161616;
+}
+/* Group Page */
+.group-info-area {
+    grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 24px;
+	grid-row-gap: 24px;
+}
+.group-item {
+	border: 1px solid #0f0c29;
+	border-radius: 10px;
+	padding: 0px 10px;
+	width: 205px;
+	
+}
+.group-content {
+	padding: 20px;
+}
+.group-content .post-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	color: #161616;
+}
+.flagimg{
+	width: 42px;
+    height: 28px;
+    border: 1px solid;
+    margin: 5px;
+}
+.flag-area {
+    align-items: center;
+    justify-content: start;
 }
 /* Footer */
 footer {
@@ -466,6 +499,10 @@ footer {
 	}
 	.d-col-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.group-info-area {
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 50px;
 	}
 	.thumbnail img {
 		width: 100%;
