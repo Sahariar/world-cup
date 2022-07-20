@@ -57,14 +57,22 @@ Hero Header
 		#302b63,
 		#0f0c29
 	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#24243e,
-		#302b63,
-		#0f0c29
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(50deg, rgba(36, 36, 62, 1), rgba(48, 43, 99, 1), rgba(15, 12, 41, 1), rgba(48, 43, 99, 1), rgb(96, 96, 253)) 0 0 / 1000% no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 30px;
+	animation: gradientAnimation 40s ease infinite;
 }
+
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+
 .hero-info {
 	margin: 50px;
 }
